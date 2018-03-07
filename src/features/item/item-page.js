@@ -14,7 +14,7 @@ import {
 const ItemContainer = glamorous.div(
     {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'row'
     },
     ({ theme }) => ({
         padding: theme.spacing.unit * 2

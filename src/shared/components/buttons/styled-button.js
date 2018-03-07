@@ -24,10 +24,10 @@ export const StyledButton = glamorous.button(
         // So we take precedent over the style of a native <a /> element.
         color: 'inherit',
         '&::-moz-focus-inner': {
-            borderStyle: 'none', // Remove Firefox dotted outline.
+            borderStyle: 'none' // Remove Firefox dotted outline.
         },
         lineHeight: '1.4em', // Improve readability for multiline button.
-        boxSizing: 'border-box',
+        boxSizing: 'border-box'
     },
     ({ theme, color = 'default' }) => ({
         ...theme.typography.button,
@@ -36,20 +36,23 @@ export const StyledButton = glamorous.button(
         padding: `${theme.spacing.unit}px ${theme.spacing.unit * 2}px`,
         borderRadius: 2,
         color: getColor(color),
-        transition: theme.transitions.create(['background-color', 'box-shadow'], {
-            duration: theme.transitions.duration.short,
-        }),
+        transition: theme.transitions.create(
+            ['background-color', 'box-shadow'],
+            {
+                duration: theme.transitions.duration.short
+            }
+        ),
         '&:hover': {
             textDecoration: 'none',
             // Reset on mouse devices
             backgroundColor: fade(theme.palette.text.primary, 0.12),
             '@media (hover: none)': {
-                backgroundColor: 'transparent',
+                backgroundColor: 'transparent'
             },
             '&$disabled': {
-                backgroundColor: 'transparent',
-            },
-        },
+                backgroundColor: 'transparent'
+            }
+        }
     })
 );
 

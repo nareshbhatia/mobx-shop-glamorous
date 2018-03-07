@@ -61,7 +61,10 @@ export class BackButton extends React.Component {
 export class DepartmentsButton extends React.Component {
     render() {
         return (
-            <StyledButton color="inherit" onClick={this.handleDepartmentsClicked}>
+            <StyledButton
+                color="inherit"
+                onClick={this.handleDepartmentsClicked}
+            >
                 Departments
             </StyledButton>
         );

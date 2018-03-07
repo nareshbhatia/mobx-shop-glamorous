@@ -51,11 +51,7 @@ export class Cart extends React.Component {
         const { orderItems, total: orderTotal } = cartStore;
 
         if (orderItems.length === 0) {
-            return (
-                <Title>
-                    Your shopping cart is empty
-                </Title>
-            );
+            return <Title>Your shopping cart is empty</Title>;
         }
 
         return (
