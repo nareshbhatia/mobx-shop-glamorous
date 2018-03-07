@@ -3,7 +3,7 @@ import { css } from 'glamor';
 import { inject } from 'mobx-react';
 import PropTypes from 'prop-types';
 import { AppBar, IconButton, Title, Toolbar } from 'shared/components';
-import { CartButton, HomeButton } from './nav-buttons';
+import { CartButton, DepartmentsButton, HomeButton } from './nav-buttons';
 import LightbulbOutline from '../icons/light-bulb-outline';
 
 const styles = {
@@ -37,6 +37,7 @@ export class Header extends React.Component {
                         {title}
                     </Title>
 
+                    <DepartmentsButton />
                     <CartButton />
 
                     <IconButton

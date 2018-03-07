@@ -5,7 +5,7 @@ import ArrowBack from '../icons/arrow-back';
 import ShoppingCart from '../icons/shopping-cart';
 import { inject } from 'mobx-react';
 import { RouterState } from 'mobx-state-router';
-import { IconButton } from 'shared/components';
+import { IconButton, StyledButton } from 'shared/components';
 import { history } from 'shared/utils';
 
 const styles = {
@@ -60,13 +60,11 @@ export class BackButton extends React.Component {
 @inject('rootStore')
 export class DepartmentsButton extends React.Component {
     render() {
-        return {
-            /*
-            <Button color="inherit" onClick={this.handleDepartmentsClicked}>
+        return (
+            <StyledButton color="inherit" onClick={this.handleDepartmentsClicked}>
                 Departments
-            </Button>
-            */
-        };
+            </StyledButton>
+        );
     }
 
     handleDepartmentsClicked = () => {

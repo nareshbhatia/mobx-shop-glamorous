@@ -12,6 +12,7 @@ export { Checkout } from './cart/checkout';
 export { HeaderLayout } from './header-layout/header-layout';
 export { BackButton } from './header-layout/nav-buttons';
 export { IconButton } from './buttons/icon-button';
+export { StyledButton } from './buttons/styled-button';
 export { Item } from './items/item';
 export { ItemInfo } from './items/item-info';
 export { ItemList } from './items/item-list';
