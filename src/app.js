@@ -56,7 +56,9 @@ class App extends Component {
         };
         const theme = createMuiTheme({ palette });
 
-        css.global('body', {
+        // Don't use css.global to set body style. See discussion here:
+        // https://github.com/paypal/glamorous/issues/401
+        document.body.className = css({
             height: '100%',
             margin: 0,
             background: theme.palette.background.default,
